@@ -69,3 +69,15 @@ searchButton.addEventListener("click", () => {
     curSelectedNav?.classList.remove("active");
     curSelectedNav = null;
 });
+let isDarkMode = false;
+const darkModeToggle = document.getElementById("dark-mode-toggle");
+darkModeToggle.addEventListener("click", toggleDarkMode);
+
+function toggleDarkMode() {
+    isDarkMode = !isDarkMode;
+    if (isDarkMode) {
+        document.body.classList.add("dark-mode");
+    } else {
+        document.body.classList.remove("dark-mode");
+    }
+}
