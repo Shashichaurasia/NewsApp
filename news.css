@@ -9,11 +9,31 @@
     --secondary-text-color: #580551;
     --accent-color: #ed5122;
     --accent-color-dark: #1d69a3;
+    --background-color: #fff;
+    --card-background-color: #fff;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    color: black;
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+}
+
+.dark-mode {
+    --primary-text-color: #fff;
+    --secondary-text-color: #bbb;
+    --accent-color: #ed5122;
+    --accent-color-dark: #1d69a3;
+    --background-color: #333;
+    --card-background-color: #444;
+}
+
+.dark-mode body {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+}
+
+.card {
+    background-color: var(--card-background-color);
 }
 
 p {
@@ -148,3 +168,4 @@ main{
 .news-source{
     margin-block: 12px;
 }
+
